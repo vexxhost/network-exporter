@@ -35,8 +35,11 @@ func (a *AristaAPI) Info() (*Info, error) {
 		return nil, err
 	}
 
-	show := module.Show(node)
-	version := show.ShowVersion()
+	var version module.ShowVersion
+	handle, _ := node.GetHandle("json")
+	if err := handle.Enable(&version); err != nil {
+		return nil, err
+	}
 
 	return &Info{
 		BootTimestamp: version.BootupTimestamp,
