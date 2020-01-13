@@ -59,8 +59,7 @@ func (a *MikrotikAPI) Info() (*Info, error) {
 	totalMemory, _ := strconv.ParseFloat(systemData.Re[0].Map["total-memory"], 64)
 
 	return &Info{
-		// TODO(mnaser): parse me
-		BootTimestamp: float64(bootTimestamp.Unix()),
+		Uptime: float64(time.Now().Unix()) - float64(bootTimestamp.Unix()),
 
 		FreeMemory:  freeMemory,
 		TotalMemory: totalMemory,

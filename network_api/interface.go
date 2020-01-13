@@ -7,7 +7,7 @@ type API interface {
 }
 
 type Info struct {
-	BootTimestamp float64
+	Uptime float64
 
 	FreeMemory  float64
 	TotalMemory float64

@@ -1,6 +1,8 @@
 package network_api
 
 import (
+	"time"
+
 	"github.com/aristanetworks/goeapi"
 	"github.com/aristanetworks/goeapi/module"
 )
@@ -42,7 +44,7 @@ func (a *AristaAPI) Info() (*Info, error) {
 	}
 
 	return &Info{
-		BootTimestamp: version.BootupTimestamp,
+		Uptime: float64(time.Now().Unix()) - version.BootupTimestamp,
 
 		FreeMemory:  float64(version.MemFree),
 		TotalMemory: float64(version.MemTotal),

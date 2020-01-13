@@ -14,7 +14,7 @@ type DeviceCollector struct {
 	Up   *prometheus.Desc
 	Info *prometheus.Desc
 
-	BootTimestamp *prometheus.Desc
+	Uptime *prometheus.Desc
 
 	FreeMemory  *prometheus.Desc
 	TotalMemory *prometheus.Desc
@@ -35,9 +35,9 @@ func NewDeviceCollector(device string, api network_api.API) *DeviceCollector {
 			[]string{"model", "serial", "version"}, prometheus.Labels{"device": device},
 		),
 
-		BootTimestamp: prometheus.NewDesc(
-			"network_device_boot_timestamp",
-			"Network device boot timestamp",
+		Uptime: prometheus.NewDesc(
+			"network_device_uptime",
+			"Network device uptime",
 			[]string{}, prometheus.Labels{"device": device},
 		),
 
@@ -57,7 +57,7 @@ func NewDeviceCollector(device string, api network_api.API) *DeviceCollector {
 func (c *DeviceCollector) Describe(ch chan<- *prometheus.Desc) {
 	ch <- c.Up
 	ch <- c.Info
-	ch <- c.BootTimestamp
+	ch <- c.Uptime
 	ch <- c.FreeMemory
 	ch <- c.TotalMemory
 }
@@ -86,8 +86,8 @@ func (c *DeviceCollector) Collect(ch chan<- prometheus.Metric) {
 	)
 
 	ch <- prometheus.MustNewConstMetric(
-		c.BootTimestamp, prometheus.GaugeValue,
-		info.BootTimestamp,
+		c.Uptime, prometheus.GaugeValue,
+		info.Uptime,
 	)
 
 	ch <- prometheus.MustNewConstMetric(
