@@ -79,7 +79,8 @@ func (a *MikrotikAPI) Interfaces() ([]Interface, error) {
 	interfaces := []Interface{}
 
 	interfaceData, err := client.Run(
-		"/interface/ethernet/print",
+		"/interface/print",
+		"?type=ether",
 		"=.proplist=name,rx-packet,rx-byte,rx-drop,rx-error,tx-packet,tx-byte,tx-drop,tx-error",
 	)
 	if err != nil {
