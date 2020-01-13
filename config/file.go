@@ -16,6 +16,7 @@ type Config struct {
 type DeviceConfig struct {
 	Type      string `yaml:"type"`
 	Name      string `yaml:"name"`
+	Community string `yaml:"community"`
 	Transport string `yaml:"transport"`
 	Hostname  string `yaml:"hostname"`
 	Port      int    `yaml:"port"`
