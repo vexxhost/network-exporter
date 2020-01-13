@@ -16,8 +16,8 @@ network_interface_info{description="bad server",device="fake-dev",interface="Eth
 network_interface_info{description="uplink",device="fake-dev",interface="Ethernet1"} 1
 # HELP network_interface_rx_bits Number of bits received
 # TYPE network_interface_rx_bits counter
-network_interface_rx_bits{device="fake-dev",interface="Ethernet1"} 54325
-network_interface_rx_bits{device="fake-dev",interface="Ethernet2"} 1234
+network_interface_rx_bits{device="fake-dev",interface="Ethernet1"} 6452523
+network_interface_rx_bits{device="fake-dev",interface="Ethernet2"} 2345
 # HELP network_interface_rx_drops Number of receive packet drops
 # TYPE network_interface_rx_drops counter
 network_interface_rx_drops{device="fake-dev",interface="Ethernet1"} 0

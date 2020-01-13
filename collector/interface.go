@@ -113,7 +113,7 @@ func (c *InterfaceCollector) Collect(ch chan<- prometheus.Metric) {
 		)
 		ch <- prometheus.MustNewConstMetric(
 			c.RxBits, prometheus.CounterValue,
-			iface.RxPackets,
+			iface.RxBits,
 			iface.Name,
 		)
 		ch <- prometheus.MustNewConstMetric(
