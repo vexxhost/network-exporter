@@ -66,6 +66,11 @@ func (c *DeviceConfig) API() network_api.API {
 			c.Password,
 			c.Port,
 		)
+	case "snmp":
+		return network_api.NewSnmpAPI(
+			c.Hostname,
+			c.Community,
+		)
 	}
 
 	return nil
