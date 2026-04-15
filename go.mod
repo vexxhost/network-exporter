@@ -6,7 +6,7 @@ require (
 	github.com/aristanetworks/goeapi v0.3.1-0.20191106033133-fe66bef98ad5
 	github.com/go-routeros/routeros v0.0.0-20190905230431-4e69e5fc3b22
 	github.com/google/martian v2.1.0+incompatible
-	github.com/karrick/tparse v2.4.2+incompatible
+	github.com/karrick/tparse v2.8.2+incompatible
 	github.com/mitchellh/mapstructure v1.1.2 // indirect
 	github.com/prometheus/client_golang v1.3.0
 	github.com/prometheus/common v0.7.0
