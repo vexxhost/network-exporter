@@ -3,7 +3,7 @@ module github.com/vexxhost/network-exporter
 go 1.13
 
 require (
-	github.com/aristanetworks/goeapi v0.3.1-0.20191106033133-fe66bef98ad5
+	github.com/aristanetworks/goeapi v0.6.0
 	github.com/go-routeros/routeros v0.0.0-20190905230431-4e69e5fc3b22
 	github.com/google/martian v2.1.0+incompatible
 	github.com/karrick/tparse v2.4.2+incompatible
