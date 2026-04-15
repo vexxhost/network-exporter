@@ -9,6 +9,8 @@ github.com/aristanetworks/goeapi v0.3.0 h1:iu4VRdBE2NZ5jWz8MsJUrIaFpM5lQ3SItrc/8
 github.com/aristanetworks/goeapi v0.3.0/go.mod h1:l2NklnkGMAycH+WLsjBpjGikgTKtqaSKi43EbiY87i0=
 github.com/aristanetworks/goeapi v0.3.1-0.20191106033133-fe66bef98ad5 h1:hnG7tKO/SA9DYX3JNQ24b0SyjmFznhNA1B8g7nzWvDo=
 github.com/aristanetworks/goeapi v0.3.1-0.20191106033133-fe66bef98ad5/go.mod h1:l2NklnkGMAycH+WLsjBpjGikgTKtqaSKi43EbiY87i0=
+github.com/aristanetworks/goeapi v0.6.0 h1:E1zvh1R7ai1Ntb0PzJRCD3ToLc9uOF6EzRRASceW9eY=
+github.com/aristanetworks/goeapi v0.6.0/go.mod h1:l2NklnkGMAycH+WLsjBpjGikgTKtqaSKi43EbiY87i0=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
@@ -44,6 +46,7 @@ github.com/julienschmidt/httprouter v1.2.0/go.mod h1:SYymIcj16QtmaHHD7aYtjjsJG7V
 github.com/karrick/tparse v2.4.2+incompatible h1:+cW306qKAzrASC5XieHkgN7/vPaGKIuK62Q7nI7DIRc=
 github.com/karrick/tparse v2.4.2+incompatible/go.mod h1:ASPA+vrIcN1uEW6BZg8vfWbzm69ODPSYZPU6qJyfdK0=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
+github.com/konsorten/go-windows-terminal-sequences v1.0.1 h1:mweAR1A6xJ3oS2pRaGiHgQ4OO8tzTaLawm8vnODuwDk=
 github.com/konsorten/go-windows-terminal-sequences v1.0.1/go.mod h1:T0+1ngSBFLxvqU3pZ+m/2kptfBszLMUkC4ZK/EgS/cQ=
 github.com/kr/logfmt v0.0.0-20140226030751-b84e30acd515/go.mod h1:+0opPa2QZZtGFBFZlji/RkVcI2GknAs/DXo4wKdlNEc=
 github.com/kr/pretty v0.1.0/go.mod h1:dAy3ld7l9f0ibDNOQOHHMYYIIbhfbHSm3C4ZsoJORNo=
