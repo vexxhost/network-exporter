@@ -9,7 +9,7 @@ require (
 	github.com/karrick/tparse v2.4.2+incompatible
 	github.com/mitchellh/mapstructure v1.1.2 // indirect
 	github.com/prometheus/client_golang v1.3.0
-	github.com/prometheus/common v0.7.0
+	github.com/prometheus/common v0.67.5
 	github.com/soniah/gosnmp v1.22.0
 	github.com/stretchr/testify v1.4.0
 	github.com/vaughan0/go-ini v0.0.0-20130923145212-a98ad7ee00ec // indirect
